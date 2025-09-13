@@ -1,3 +1,22 @@
 #!/bin/sh
-chromium = /usr/bin/chromium-browser --display=:0 --kiosk --incognito --app=https://scientifichobbyist.remotefalcon.com/remote-falcon
-#chromium = /usr/bin/chromium-browser --start-fullscreen --start-maximized --kiosk --noerrdialogs --disable-default-apps --disable-single-click-autofill --disable-translate-new-ux --disable-translate --disable-cache --disk-cache-dir=/dev/null --disk-cache-size=1 --reduce-security-for-testing --app=http://localhost
+sudo pkill chromium
+
+xset s off
+xset -dpms
+xset s noblank
+
+export FONTCONFIG_PATH=/etc/fonts
+
+chromium = 	/usr/bin/chromium-browser --display=:0 --kiosk --noerrdialogs --incognito \
+		--touch-events=enabled \
+		--enable-touch-drag-drop \
+		--disable-infobars \
+		--disable-session-crashed-bubble \
+		--overscroll-history-navigation=0 \
+		--disable-pinch \
+		--disable-renderer-backgrounding \
+		--enable-features=OverlayScrollbar,TouchpadAndWheelScrollLatching \
+		--user-agent="Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36" \
+		--app=http://localhost													# USE THIS LINE IF YOU WANT TO LOAD FROM THE LOCAL APACHE WEB SERVER FOR GPIO ACTIONS
+#		--app=https://scientifichobbyist.remotefalcon.com/remote-falcon			# USE THIS LINE IF YOU ONLY WANT TO LOAD YOUR REMOTE FALCON PAGE
+
