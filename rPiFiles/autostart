@@ -1,0 +1,7 @@
+/usr/bin/lwrespawn /usr/bin/pcmanfm --desktop --profile LXDE-pi &
+/usr/bin/lwrespawn /usr/bin/wf-panel-pi &
+/usr/bin/kanshi &
+/usr/bin/lxsession-xdg-autostart
+
+/home/pi/kiosk_refresh
+#chromium = /usr/bin/chromium-browser --start-fullscreen --start-maximized --kiosk --noerrdialogs --disable-default-apps --disable-single-click-autofill --disable-translate-new-ux --disable-translate --disable-cache --disk-cache-dir=/dev/null --disk-cache-size=1 --reduce-security-for-testing --app=http://localhost

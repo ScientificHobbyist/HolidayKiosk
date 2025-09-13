@@ -1,0 +1,3 @@
+#!/bin/sh
+chromium = /usr/bin/chromium-browser --display=:0 --kiosk --incognito --app=https://scientifichobbyist.remotefalcon.com/remote-falcon
+#chromium = /usr/bin/chromium-browser --start-fullscreen --start-maximized --kiosk --noerrdialogs --disable-default-apps --disable-single-click-autofill --disable-translate-new-ux --disable-translate --disable-cache --disk-cache-dir=/dev/null --disk-cache-size=1 --reduce-security-for-testing --app=http://localhost

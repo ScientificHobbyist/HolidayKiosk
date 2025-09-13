@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#chromium = /usr/bin/chromium-browser --display=:0 --kiosk --incognito --app=http://localhost
+
+chromium = /usr/bin/chromium-browser --display=:0 --kiosk --incognito --app=https://scientifichobbyist.remotefalcon.com/remote-falcon
+
+#chromium-browser --display=:0 --kiosk --incognito --window-position=0,0 http://localhost
+
+#chromium-browser --display=:0 --kiosk --incognito --window-position=0,0 https://scientifichobbyist.remotefalcon.com/remote-falcon
